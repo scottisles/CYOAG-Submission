@@ -4,17 +4,12 @@
     padding:0;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(66, 66, 66);
-    background-image:url("../images/frontpage.png");
+    background-image:url("/images/frontpage.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
-    position: relative;   
-}
-
-/*entry5 -- Shield*/
-.shield{
-    #background-image:url("../images/frontpageshieldS.png");
+    position: relative;  
+    #background-color: rgb(66, 66, 66); 
 }
 
 /*Grid layout for the main site*/
@@ -22,13 +17,13 @@
     display: grid;
     grid-template-columns: auto auto auto;
 	grid-gap: 5px;
-	background-color: rgb(109, 108, 108);
-    padding: 100px;
+	padding: 100px;
+    #background-color: rgb(109, 108, 108);
     
 }
 .grid-container-front div{
-    #background-color: rgb(255, 255, 255);
     text-align: center;
+    #background-color: rgb(255, 255, 255);
 }
 
 #welcome{
@@ -44,12 +39,8 @@
 }
   
   .image {
-  text-align: right;
-    #  display: block;
-  #  margin-right 0%;
-  #  width: auto;
-  #  height:auto;
-  }
+    text-align: right;
+}
   
   .overlay {
     position: absolute;
@@ -61,11 +52,10 @@
     width: 100%;
     opacity: 0;
     transition: .3s ease;
-    #background-color: red;
-  }
+}
   
   .container:hover .overlay {
-    opacity: 5;
+    opacity: 4;
   }
 
 
