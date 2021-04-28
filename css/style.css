@@ -1,0 +1,147 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(66, 66, 66);
+    background:url("../images/dungeon.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.scroll{
+    background-image:url("../images/scroll.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    #background-color: rgb(0, 0, 0); 
+}
+
+/*Grid layout for the main site*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 650px auto;
+	grid-gap: 5px;
+	#background-color: rgb(0, 0, 0);
+	padding: 5px;
+    
+}
+.grid-container div{
+    #background-color: rgb(243, 184, 184);
+    text-align: center;
+}
+
+/*items 2 5 8 11 and 14 contain the center site. */
+
+/*Section 1 -- Main logo image*/
+.section1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    max-width: 95%;
+}
+.item2 .section1 {
+    #background-color: black;
+}
+
+/*Section 2 -- Story line*/
+.section2 {
+    #background-color: rgb(255, 255, 255);
+}
+.item5 .section2 {
+    font-family:'Lucida Grande';
+    max-height: 100px;
+    min-height: 100px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+/*Section 3 -- Buttons*/
+.item5 .section3{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.item8 {
+    font-family:'Lucida Grande';
+}
+
+/*Grid layout images within the main grid, location 11*/
+.grid-container-img{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.grid-container-img div{
+    position: relative;
+    text-align:center;
+    color: rgb(238, 255, 0);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-size: 20px;
+}
+.grid-container-img .centerimg {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    #transform: translate(-50%, -50%);
+}
+
+
+
+/*Map layout GIF*/
+.item11 img{
+    width: 100%;
+}
+
+.item14 .musicply{
+    text-align:center;
+    font-family:'Lucida Grande';
+    #background-color: rgb(0, 255, 34); 
+}
+
+/*used for the placeholder footer */
+.footer { 
+}
+.footer div{
+    text-align: right;
+    font-family:'Lucida Grande';
+    color: rgb(185, 179, 241);
+    #background-color: rgb(27, 27, 27);
+}
+/*used for the placeholder footer */
+ 
+
+/*Selction Buttons*/
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: 60px;
+    gap: 15px;
+} 
+.btn {
+    background-color: hsl(0, 96%, 30%);
+    background-image: linear-gradient( to right, rgb(121, 2, 2), rgb(190, 3, 3));
+    border: 4px solid hsl(51, 89%, 52%);
+    border-style: groove;
+    border-radius:5px;
+    padding: 10px 50px 10px;
+    font-family:'Lucida Grande';
+    font-size: 14px;
+    color: yellow;
+    outline: none;
+}
+.btn:hover {
+    border-color: rgb(255, 251, 0);
+}
+/*Selction Buttons*/
+

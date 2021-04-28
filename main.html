@@ -1,0 +1,110 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+     <script defer src="game.js"></script>
+     <title>Chaos Dungeon</title>
+</head>
+<body>
+  <section class=scroll>
+  <div class="grid-container"> <!--Creates the Grid layout!-->
+    <div class="item1"></div>
+
+    <div class="item2">
+      <div class="section1"> <!--Holds the Main Logo!-->
+	     <div class="mainlogo">
+          <img src="images/Header.png" alt="Chaos Dungeon">
+          </a>
+        </div>
+      </div>
+      </div>
+    
+	  <div class="item3"></div> <!--Not in use!-->
+	  <div class="item4"></div> <!--Not in use!-->
+
+    <div class="item5">
+	      <div class=section2>
+           <div id="storyboard">Story Board</div>
+           </div> <!--Holds the Story!-->
+
+        <div class="section3">    <!--Holds the buttons!-->
+            <div id="choice" class="btn-grid">
+              <button class="btn">Choice 1</button>
+              <button class="btn">Choice 2</button>
+              <button class="btn">Choice 3</button>    
+            </div>
+
+          <div class="section4">  <!--Holds the images!-->
+            <div id=imgstory>
+            </div>
+          </div>
+
+    </div>
+
+	  <div class="item6"></div> <!--Not in use!-->
+	  <div class="item7"></div> <!--Not in use!-->
+
+    <div class="item8">
+      <div class=grid-container-img>
+        <div class="img1">
+          <p class="centerimg" id="helmut">Helmut</p>
+          <img  src="./images/Helmut.png" alt="Helmut">
+        </div>
+
+        <div class="img2">
+          <p class="centerimg" id="armour">Armour</p>
+          <img src="./images/torso.png" alt="Armour">
+        </div>
+
+        <div class="img3">
+          <p class="centerimg" id="shield">Shield</p>
+          <img src="./images/shield.png" alt="Shield">
+        </div>
+
+        <div class="img4">
+          <p class="centerimg" id="weapon">Weapon</p>
+          <img src="./images/mase.png" alt="Weapon">
+      </div>
+
+      </div>
+    </div>
+
+	  <div class="item9"></div> <!--Not in use!-->
+    <div class="item10"></div> <!--Not in use!-->
+
+	  <div class="item11">
+        <img src="./images/map.gif" alt="">
+    </div>
+    
+	  <div class="item12"></div> <!--Not in use!-->
+    <div class="item13"></div> <!--Not in use!-->
+
+    <div class="item14">
+      <div class="musicply">
+      <!--<p><audio controls autoplay><source src="audio/audio.mp3" type="audio/mpeg"></audio><br>Music by Michael Kobrin - Pixabay </p>-->
+      <audio id="myAudio">
+        <source src="/audio/audio.mp3" type="audio/mpeg">
+      </audio>
+      <button onclick="playAudio()" type="button">Play Background Music</button>
+      <button onclick="pauseAudio()" type="button">Pause Audio</button> 
+      <p>Music by Michael Kobrin - Pixabay</p>
+      </div>
+    </div>
+
+    <div class="item15"></div> <!--Not in use!-->
+    <div class="item16"></div> <!--Not in use!-->
+
+    <div class="item17">
+      <div class="footer">
+        <div>Copyright Scott Isles 2021</div>
+      </div>
+    </div>
+
+    <div class="item18"></div> 
+  </div>
+</section>
+</body>
+</html>
